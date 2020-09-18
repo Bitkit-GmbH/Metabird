@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Metabird – Responsive Bootstrap Personal Template Documentation</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&display=swap">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/prism-treeview.css">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-default fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" alt="Logo">
+                            <span>Metabird</span>
+                        </a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><h6>Documentation</h6></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main role="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Introduction</h5>
+                            <ul>
+                                <li><strong>Version:</strong> 2.1.0</li>
+                                <li><strong>Created:</strong> 13 February 2020</li>
+                                <li><strong>Latest update:</strong> 5 September 2020</li>
+                            </ul>
+
+                            <h5>Folder structure</h5>
+                            <p>
+                                Unzip the file (.zip) you downloaded from the marketplace. The extracted files have the following structure:
+                            </p>
+                            <pre>
+                                <code class="language-treeview">
+                                HTML/
+                                |-- css/
+                                |   |-- .-> All CSS files
+                                |-- fonts/
+                                |   |-- .-> All fonts
+                                |-- images/
+                                |   |-- .-> All images
+                                |-- js/
+                                |   |-- .-> All javascript files
+                                |-- php/
+                                |   |-- .-> All PHP files
+                                |-- scss/
+                                |   |-- .-> All SCSS files
+                                |-- vendor/
+                                |   |-- .-> All third party files
+                                |-- videos/
+                                |   |-- .-> All videos
+                                `-- *.html
+                                </code>
+                            </pre>
+
+                            <h5>HTML structure</h5>
+                            <p>
+                                Set the primary language for the document by using the <code class="language-markup">lang</code> attribute on the <code class="language-markup">&lthtml></html></code> element:
+                            </p>
+                            <pre>
+                                <code class="language-markup">
+                                    &lthtml lang="en">&lt/html>
+                                </code>
+                            </pre>
+                            <pre>
+                                <code class="language-markup">
+                                &ltbody>
+                                    &lt!-- Page preloader -->
+                                    &ltdiv class="preloader">
+                                        …
+                                    &lt/div>
+                                
+                                    &ltdiv class="wrapper">
+                                        &ltheader>
+                                            &lt!-- Start Navbar -->
+                                            &ltnav class="navbar navbar-expand-lg navbar-light fixed-top">
+                                                …
+                                            &lt/nav>
+                                            &lt!-- End Navbar -->
+                                        &lt/header>
+                                
+                                        &ltmain role="main">
+                                
+                                            &lt!-- Start Home -->
+                                            &ltsection id="home">
+                                                …
+                                            &lt/section>
+                                            &lt!-- End Home -->
+                                
+                                            &lt!-- Start About -->
+                                            &ltsection id="about">
+                                                …
+                                            &lt/section>
+                                            &lt!-- End About -->
+                                            
+                                            &lt!-- Start Services -->
+                                            &ltsection id="services">
+                                            …
+                                            &lt/section>
+                                            &lt!-- End Services -->
+                            
+                                            &lt!-- Start Portfolio -->
+                                            &ltsection id="portfolio">
+                                            …
+                                            &lt/section>
+                                            &lt!-- End Portfolio -->
+                            
+                                            &lt!-- Start Contact -->
+                                            &ltsection id="contact">
+                                            …
+                                            &lt/section>
+                                            &lt!-- End Contact -->
+                            
+                                            &lt!-- Start Blog -->
+                                            &ltsection id="blog">
+                                            …
+                                            &lt/section>
+                                            &lt!-- End Blog -->
+                            
+                                            &lt!-- Start Footer -->
+                                            &ltfooter>
+                                            …
+                                            &lt/footer>
+                                            &lt!-- End Footer -->
+                            
+                                            &lt!-- Back to top button -->
+                                            &ltdiv class="back-to-top">
+                                            …
+                                            &lt/div>
+                                
+                                        &lt/main>
+                                    &lt/div>
+                                    
+                                    &lt!-- Scripts  -->
+                                    &ltscript>
+                                        …
+                                    &lt/script>
+                                &lt/body>
+                                </code>
+                            </pre>
+
+                            <h5>CSS</h5>
+                            <p>
+                                The files are described in the table below:
+                            </p>
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>master.css</code></td>
+                                        <td>This is main CSS file for the theme, which includes the layout and styling for all aspects of the theme.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>color/*.css</code></td>
+                                        <td>
+                                            These are CSS files for the theme color. The theme contains 6 predefined colors, which can be linked in the <code class="language-markup">&lthead></code> area. If you want to use your own color, you can create a new CSS file and name it after your color. To do this, simply copy the content of an existing color file, change the hex color values and link them in the <code class="language-markup">&lthead></code> area.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5>SCSS</h5>
+                            <p>
+                                The files are described in the table below:
+                            </p>
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>*.scss</code></td>
+                                        <td>If you would like to write your CSS code in Sass, you will find the files in the SCSS folder. Each section is saved as a single file.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5>Javascript</h5>
+                            <p>
+                                The files are described in the table below:
+                            </p>
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>main.js</code></td>
+                                        <td>This is the main Javascript file. It contains all the custom code that is used for features.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>contact.js</code></td>
+                                        <td>
+                                            This is the Javascript file for the contact form and the Google Recaptcha verification.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5>PHP</h5>
+                            <p>
+                                The files are described in the table below:
+                            </p>
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>File</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>contact.php</code></td>
+                                        <td>This is the PHP file which is necessary for sending emails. Make sure you define the recipient address, Google Site Key and Google Secret Key before using the contact form. You can create the site key and the secret key via the following website: <a href="https://www.google.com/recaptcha" target="_blank">https://www.google.com/recaptcha</a>. Important: Be sure to select Recaptcha version 2.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h5>Credits</h5>
+                            <ul>
+                                <li>
+                                    <a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jordansegalman/Contact-Form" target="_blank">AJAX Contact Form</a>
+                                </li>
+                                <li>
+                                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                                </li>
+                                <li>
+                                    <a href="https://jquery.com/" target="_blank">jQuery</a>
+                                </li>
+                                <li>
+                                    <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a>
+                                </li>
+                                <li>
+                                    <a href="https://lineicons.com/" target="_blank">Line Icons</a>
+                                </li>
+                                <li>
+                                    <a href="https://pixelcog.github.io/parallax.js/" target="_blank">Parallax JS</a>
+                                </li>
+                                <li>
+                                    <a href="https://vincentgarreau.com/particles.js/" target="_blank">Particles JS</a>
+                                </li>
+                                <li>
+                                    <a href="https://pixabay.com/" target="_blank">Pixabay Videos</a>
+                                </li>
+                                <li>
+                                    <a href="https://vestride.github.io/Shuffle/" target="_blank">Shuffle JS</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/mattboldt/typed.js/" target="_blank">Typed JS</a>
+                                </li>
+                                <li>
+                                    <a href="http://imakewebthings.com/waypoints/" target="_blank">Waypoints JS</a>
+                                </li>
+                                <li>
+                                    <a href="https://unsplash.com/" target="_blank">Unsplash Images</a>
+                                </li>
+                            </ul>
+
+                            <h5>Changelog</h5>
+                            <strong>Version 1.0</strong> – 13 February 2020
+                            <ul>
+                                <li>Initial release</li>
+                            </ul>
+                            <strong>Version 2.1.0</strong> – 5 September 2020
+                            <ul>
+                                <li>Update Core</li>
+                                <li>Update CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prism.js"></script>
+        <script src="js/prism-treeview.js"></script>
+    </body>
+</html>
