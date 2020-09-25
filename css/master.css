@@ -908,9 +908,6 @@ footer a:hover {
   body {
     left: 0 !important;
   }
-  .navbar.fixed-top .social-media {
-    display: none;
-  }
   body.mm-menu-open .mm-overlay {
     opacity: 0;
     visibility: hidden;
@@ -956,11 +953,6 @@ footer a:hover {
     position: fixed;
     top: 0;
     width: 300px;
-  }
-  body.boxed-content .navbar.fixed-top {
-    left: auto;
-    right: auto;
-    transform: unset;
   }
   /* Testimonials */
   .owl-carousel .owl-nav .owl-prev {
