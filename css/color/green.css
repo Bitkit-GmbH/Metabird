@@ -37,16 +37,10 @@ footer {
     border-color: #00a19a;
 }
 
-.navbar.fixed-top.shrink .navbar-brand svg path {
+.navbar.fixed-left .navbar-brand svg path {
     fill: #00a19a;
 }
 
 .preloader .spinner {
     border-top-color: #00a19a;
-}
-
-@media screen and (max-width: 991.98px) {
-    .navbar.fixed-left .navbar-brand svg path {
-        fill: #00a19a;
-    }
 }
