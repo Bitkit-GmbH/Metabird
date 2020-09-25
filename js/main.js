@@ -1,5 +1,5 @@
 /*
-Template Name: Metafox – Responsive Bootstrap Personal Template
+Template Name: Metabird – Responsive Bootstrap Personal Template
 Author: Metablox
 Version: 1.1.2
 Created: February 2020
