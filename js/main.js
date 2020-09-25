@@ -1,7 +1,7 @@
 /*
 Template Name: Metafox – Responsive Bootstrap Personal Template
 Author: Metablox
-Version: 1.1.0
+Version: 1.0.0
 Created: February 2020
 File Description: Main JS file of the template
 */
@@ -51,11 +51,11 @@ File Description: Main JS file of the template
     });
 
     // Smooth scrolling
-    $(document).on('click', 'a[href^="#"]', function () {
+    $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
 
         var offsetY;
-        var navHeight = $('.navbar.fixed-top').outerHeight();
+        var navHeight = 72;
 
         $(window).on('resize', function() {
             if($(window).width() <= 576) {

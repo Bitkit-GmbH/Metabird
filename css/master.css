@@ -278,7 +278,8 @@ body.boxed-content .jumbotron {
   width: 100%;
 }
 
-.navbar.fixed-left .container .navbar-brand img {
+.navbar.fixed-left .container .navbar-brand svg {
+  height: auto;
   margin: 0 auto;
   margin-bottom: 1rem;
   max-width: 60px;
@@ -942,7 +943,7 @@ footer a:hover {
     padding: 0;
     width: auto;
   }
-  .navbar.fixed-left .container .navbar-brand img {
+  .navbar.fixed-left .container .navbar-brand svg {
     width: 35px;
     margin: 0 .75rem 0 0;
   }
